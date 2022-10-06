@@ -1,8 +1,10 @@
 function additemtlist(){
-    let newitem = document.getElementById("InsertItem").value
+    document.getElementById("error").innerHTML=""
+    let newitem= document.getElementById("InsertItem").value
+
     if (newitem==''){
-        document.getElementById("showItems").innerHTML=("Are bhai kuch to likh ")
-        
+        document.getElementById("error").innerHTML=("Are bhai kuch to likh ")
+
     }
     else{
         // document.getElementById("showItems").innerHTML=(newitem)
@@ -14,10 +16,9 @@ function additemtlist(){
         a.href = "javascript:void(0)"
         a.textContent="x"
         li.appendChild(a)
-        document.getElementById("InsertItem").value =""
+        document.getElementById('InsertItem').value =" "
     }
     
-
     let btn = document.querySelector('ul')
         btn.addEventListener('click',function(e){
         let list = document.getElementById('box')
