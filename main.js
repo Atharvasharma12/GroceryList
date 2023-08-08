@@ -14,7 +14,7 @@ function additemtlist(){
         list.appendChild (li)
         let a = document.createElement('a')
         a.href = "javascript:void(0)"
-        a.textContent="x"
+        a.textContent = "X";
         li.appendChild(a)
         document.getElementById('InsertItem').value =" "
     }
